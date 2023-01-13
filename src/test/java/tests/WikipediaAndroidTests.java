@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.CollectionCondition;
 import io.appium.java_client.AppiumBy;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +14,7 @@ import static io.qameta.allure.Allure.step;
 
 public class WikipediaAndroidTests extends TestBase {
     @Tag("Mobile")
+    @Owner("Тимур Максютов")
     @Test
     void successSearchWikiTest() {
         back();
@@ -25,7 +27,9 @@ public class WikipediaAndroidTests extends TestBase {
                     .shouldHave(sizeGreaterThan(0));
         });
     }
+
     @Tag("Mobile")
+    @Owner("Тимур Максютов")
     @Test
     void countryPageSearchTest() {
         back();
@@ -43,7 +47,9 @@ public class WikipediaAndroidTests extends TestBase {
             $(AppiumBy.className("android.widget.TextView")).shouldHave(text("Russia"));
         });
     }
+
     @Tag("Mobile")
+    @Owner("Тимур Максютов")
     @Test
     void onBoardingStepsTest() {
 
