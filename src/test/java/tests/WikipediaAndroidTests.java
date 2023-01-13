@@ -38,7 +38,6 @@ public class WikipediaAndroidTests extends TestBase {
         });
         step("Verify page is correct", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title")).click();
-            $(AppiumBy.className("android.view.ViewGroup")).click();
             $(AppiumBy.className("android.widget.TextView")).shouldHave(text("Russia"));
         });
     }
