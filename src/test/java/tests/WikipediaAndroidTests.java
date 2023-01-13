@@ -13,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class WikipediaAndroidTests extends TestBase {
+
     @Tag("Mobile")
     @Owner("Тимур Максютов")
     @Test
